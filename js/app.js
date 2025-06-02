@@ -13,6 +13,11 @@ function adicionar(){
 }
 function sortear() {
     embaralhar(amigos);
+    let sorteio = document.getElementById('lista-sorteio');
+
+    for(let i = 0;i < amigos.length; i++ ) {
+        sorteio.innerHTML = sorteio.innerHTML + amigos [i] + ' --> ' + amigos [i + 1] + '<br>';
+    }
 }
 function embaralhar(lista){
     for (let indice = lista.length; indice; indice--) {
